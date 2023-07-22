@@ -1,0 +1,11 @@
+.text {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    gap: 32px;
+}

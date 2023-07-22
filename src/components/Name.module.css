@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: auto auto auto 96px;
+}
+
+.title {
+  font-size: 64px;
+  letter-spacing: 3.2px;
+}
+
+.line {
+  width: 23%;
+  height: 6px;
+  background-color: #000;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 500;
+}

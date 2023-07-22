@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    background: #F5F5F5;
+    margin: 16px 32px 16px 32px;
+    height: 100%;
+}
+
+.image {
+    height: 100%;
+    width: auto;
+}

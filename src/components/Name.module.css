@@ -17,6 +17,8 @@
 }
 
 .subtitle {
+  display: flex;
   font-size: 32px;
   font-weight: 500;
+  gap: 8px;
 }

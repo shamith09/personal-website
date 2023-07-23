@@ -3,6 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import styles from "./layout.module.css";
+import BottomBar from "@/components/BottomBar";
+import MainSection from "@/components/MainSection";
+import MovingIcons from "@/components/MovingIcons";
+import NavBar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +24,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className={styles.container}>
-          {children}
+          <NavBar />
+          <MainSection>
+            {children}
+          </MainSection>
+          <BottomBar />
         </div>
         <Analytics />
       </body>

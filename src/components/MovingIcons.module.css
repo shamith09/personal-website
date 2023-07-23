@@ -12,7 +12,7 @@
 
 .final {
   gap: 8px;
-  position: absolute;
+  position: fixed;
   bottom: 18px;
   right: 32px;
 }

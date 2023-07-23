@@ -1,11 +1,7 @@
 "use client";
 
 import styles from "./page.module.css";
-import "./globals.css";
 import Typewriter from "typewriter-effect";
-import NavBar from "@/components/NavBar";
-import BottomBar from "@/components/BottomBar";
-import MainSection from "@/components/MainSection";
 
 export default function Home() {
   return (

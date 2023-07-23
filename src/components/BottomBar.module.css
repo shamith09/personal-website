@@ -5,7 +5,9 @@
 }
 
 .buffer {
-    height: 56px;
+    height: 48px;
+    background-color: #fff;
+    flex-shrink: 0;
 }
 
 .text {

@@ -11,19 +11,19 @@ export default function Icons() {
   return (
     <div className={styles.container}>
       <Link href="https://www.instagram.com/_shamyth_/">
-        <Image src={Instagram} alt="Instagram" height={32} />
+        <Image src={Instagram} alt="Instagram" height={24} />
       </Link>
       <Link href="https://twitter.com/shamith09">
-        <Image src={Twitter} alt="Twitter" height={32} />
+        <Image src={Twitter} alt="Twitter" height={24} />
       </Link>
       <Link href="https://www.linkedin.com/in/shamith-pasula-802275199/">
-        <Image src={LinkedIn} alt="LinkedIn" height={32} />
+        <Image src={LinkedIn} alt="LinkedIn" height={24} />
       </Link>
       <Link href="https://github.com/shamith09">
-        <Image src={GitHub} alt="GitHub" height={32} />
+        <Image src={GitHub} alt="GitHub" height={24} />
       </Link>
       <Link href="mailto:shamith09@berkeley.edu">
-        <Image src={GMail} alt="GMail" height={32} />
+        <Image src={GMail} alt="GMail" height={24} />
       </Link>
     </div>
   );

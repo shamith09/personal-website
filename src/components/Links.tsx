@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./Links.module.css";
 
-export default function NavBar() {
+export default function Links() {
   return (
     <div className={styles.container}>
       <Link href="/about" className={`${styles.text} text`}>

@@ -1,16 +1,24 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: auto auto auto 96px;
 }
 
-.navBar {
-    position: sticky;
-    top: 0;
+.title {
+  font-size: 64px;
+  letter-spacing: 3.2px;
 }
 
-.bottomBar {
-    position: sticky;
-    bottom: 0;
+.line {
+  width: 23%;
+  height: 6px;
+  background-color: #000;
+}
+
+.subtitle {
+  display: flex;
+  font-size: 32px;
+  font-weight: 500;
+  gap: 8px;
 }

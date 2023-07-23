@@ -3,27 +3,36 @@
 import styles from "./page.module.css";
 import "./globals.css";
 import Typewriter from "typewriter-effect";
+import NavBar from "@/components/NavBar";
+import BottomBar from "@/components/BottomBar";
+import MainSection from "@/components/MainSection";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1 className={`${styles.title} title`}>SHAMITH PASULA</h1>
-      <div className={styles.line} />
-      <div className={`${styles.subtitle} text`}>
-        I am
-        <Typewriter
-          options={{
-            strings: [
-              " a software engineer.",
-              " a UC Berkeley student.",
-              " a full-stack developer.",
-              " an artist.",
-            ],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </div>
-    </div>
+    <>
+      <NavBar />
+      <MainSection>
+        <div className={styles.container}>
+          <h1 className={`${styles.title} title`}>SHAMITH PASULA</h1>
+          <div className={styles.line} />
+          <div className={`${styles.subtitle} text`}>
+            I am
+            <Typewriter
+              options={{
+                strings: [
+                  " a software engineer.",
+                  " a UC Berkeley student.",
+                  " a full-stack developer.",
+                  " an artist.",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
+        </div>
+      </MainSection>
+      <BottomBar showIcons={true} />
+    </>
   );
 }

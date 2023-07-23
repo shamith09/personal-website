@@ -9,7 +9,7 @@ export default function MainSection({
 }) {
   return (
     <div className={styles.container}>
-      <Image src={HeadShot} alt="" className={styles.image} />
+      <Image src={HeadShot} alt="" className={styles.image} priority />
       {children}
     </div>
   );

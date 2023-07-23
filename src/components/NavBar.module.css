@@ -3,19 +3,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px 0 32px;
+    position: sticky;
+    top: 0;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 20px;
+    color: #000;
 }
 
 .logo {
-    width: 22px;
-    height: 43px;
+    height: 30px;
+    width: auto;
 }
 
 .logoContainer {
+    text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
 }

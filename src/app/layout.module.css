@@ -4,13 +4,3 @@
     justify-content: space-between;
     height: 100vh;
 }
-
-.navBar {
-    position: sticky;
-    top: 0;
-}
-
-.bottomBar {
-    position: sticky;
-    bottom: 0;
-}

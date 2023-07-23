@@ -13,7 +13,7 @@ export default function Links() {
       <Link href="/projects" className={`${styles.text} text`}>
         Projects
       </Link>
-      <Link href="/resume" className={`${styles.text} text`}>
+      <Link href="/shamith-pasula-resume.pdf" className={`${styles.text} text`}>
         Resume
       </Link>
       <Link href="/contact" className={`${styles.text} text`}>

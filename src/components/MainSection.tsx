@@ -24,12 +24,6 @@ export default function MainSection({
       <Image src={HeadShot} alt="" className={styles.image} priority />
       <MovingIcons iconsCenter={iconsCenter} init={pathname === "/contact"} />
       {children}
-      {pathname === "/contact" && (
-        <>
-          <div className={styles.center} />
-          <div className={styles.right} />
-        </>
-      )}
     </div>
   );
 }

@@ -23,7 +23,7 @@ export default function MovingIcons({ iconsCenter, init }: Props) {
       {init && !iconsCenter && <div className={styles.init} />}
       <div
         className={`${styles.iconContainer} ${
-          iconsCenter ? styles.initial : styles.final
+          iconsCenter ? styles.final : styles.initial
         }`}
       >
         <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>

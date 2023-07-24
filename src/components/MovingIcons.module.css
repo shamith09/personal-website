@@ -2,15 +2,15 @@
   display: flex;
 }
 
-.initial {
+.final {
   flex-direction: column;
-  gap: 32px;
+  gap: 64px;
   padding-left: 32px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.final {
+.initial {
   gap: 8px;
   position: fixed;
   bottom: 18px;

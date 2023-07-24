@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import styles from "./MainSection.module.css";
 import HeadShot from "../../public/headshot.png";
@@ -22,8 +22,14 @@ export default function MainSection({
   return (
     <div className={styles.container}>
       <Image src={HeadShot} alt="" className={styles.image} priority />
-      <MovingIcons iconsCenter={iconsCenter} init={pathname === "/contact"}/>
+      <MovingIcons iconsCenter={iconsCenter} init={pathname === "/contact"} />
       {children}
+      {pathname === "/contact" && (
+        <>
+          <div className={styles.center} />
+          <div className={styles.right} />
+        </>
+      )}
     </div>
   );
 }

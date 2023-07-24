@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/react";
 import styles from "./layout.module.css";
 import BottomBar from "@/components/BottomBar";
 import MainSection from "@/components/MainSection";
-import MovingIcons from "@/components/MovingIcons";
 import NavBar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });

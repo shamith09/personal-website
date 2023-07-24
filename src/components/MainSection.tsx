@@ -22,7 +22,7 @@ export default function MainSection({
   return (
     <div className={styles.container}>
       <Image src={HeadShot} alt="" className={styles.image} priority />
-      <MovingIcons iconsCenter={iconsCenter} />
+      <MovingIcons iconsCenter={iconsCenter} init={pathname === "/contact"}/>
       {children}
     </div>
   );

@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.containerLeft {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 40px;
+    padding-left: 16px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}

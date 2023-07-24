@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -12,42 +12,46 @@ import styles from "./MovingIcons.module.css";
 
 interface Props {
   iconsCenter: boolean;
+  init: boolean;
 }
 
-export default function MovingIcons({ iconsCenter }: Props) {
+export default function MovingIcons({ iconsCenter, init }: Props) {
   const size = iconsCenter ? 32 : 16;
 
   return (
-    <div
-      className={`${styles.iconContainer} ${
-        iconsCenter ? styles.initial : styles.final
-      }`}
-    >
-      <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
-        <Link href="https://www.instagram.com/_shamyth_/">
-          <Image src={Instagram} alt="Instagram" height={size} />
-        </Link>
-      </motion.div>
-      <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
-        <Link href="https://twitter.com/shamith09">
-          <Image src={Twitter} alt="Twitter" height={size} />
-        </Link>
-      </motion.div>
-      <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
-        <Link href="https://www.linkedin.com/in/shamith-pasula-802275199/">
-          <Image src={LinkedIn} alt="LinkedIn" height={size} />
-        </Link>
-      </motion.div>
-      <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
-        <Link href="https://github.com/shamith09">
-          <Image src={GitHub} alt="GitHub" height={size} />
-        </Link>
-      </motion.div>
-      <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
-        <Link href="mailto:shamith09@berkeley.edu">
-          <Image src={GMail} alt="GMail" height={size} />
-        </Link>
-      </motion.div>
-    </div>
+    <>
+      {init && !iconsCenter && <div className={styles.init} />}
+      <div
+        className={`${styles.iconContainer} ${
+          iconsCenter ? styles.initial : styles.final
+        }`}
+      >
+        <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
+          <Link href="https://www.instagram.com/_shamyth_/">
+            <Image src={Instagram} alt="Instagram" height={size} />
+          </Link>
+        </motion.div>
+        <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
+          <Link href="https://twitter.com/shamith09">
+            <Image src={Twitter} alt="Twitter" height={size} />
+          </Link>
+        </motion.div>
+        <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
+          <Link href="https://www.linkedin.com/in/shamith-pasula-802275199/">
+            <Image src={LinkedIn} alt="LinkedIn" height={size} />
+          </Link>
+        </motion.div>
+        <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
+          <Link href="https://github.com/shamith09">
+            <Image src={GitHub} alt="GitHub" height={size} />
+          </Link>
+        </motion.div>
+        <motion.div layout style={{ width: `${size}px`, height: `${size}px` }}>
+          <Link href="mailto:shamith09@berkeley.edu">
+            <Image src={GMail} alt="GMail" height={size} />
+          </Link>
+        </motion.div>
+      </div>
+    </>
   );
 }

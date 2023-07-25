@@ -4,6 +4,8 @@ import styles from "./index.module.css";
 import Subtitle from "../Subtitle";
 import GoogleMapReact from "google-map-react";
 
+const apiKey: string = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!;
+
 export default function Map() {
   const mapProps = {
     center: {

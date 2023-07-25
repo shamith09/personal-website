@@ -75,6 +75,7 @@ export default function Map() {
           options={{
             styles: mapStyles,
             disableDefaultUI: true,
+            draggable: false,
           }}
         />
       </div>

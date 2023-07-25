@@ -1,7 +1,12 @@
 "use client";
 
 import styles from "./ContactForm.module.css";
-import sendEmail, { Params } from "@/email";
+interface EmailParams {
+  email: string;
+  name: string;
+  subject: string;
+  message: string;
+}
 
 export default function ContactForm() {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -9,8 +14,14 @@ export default function ContactForm() {
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
 
-    const data = Object.fromEntries(formData) as unknown as Params;
-    await sendEmail(data);
+    const data = Object.fromEntries(formData) as unknown as EmailParams;
+    await fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
   };
 
   return (

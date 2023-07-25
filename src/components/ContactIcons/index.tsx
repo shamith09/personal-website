@@ -1,9 +1,9 @@
 "use client";
 
 import Typewriter from "typewriter-effect";
-import styles from "./ContactIcons.module.css";
+import styles from "./index.module.css";
 import Link from "next/link";
-import Subtitle from "./Subtitle";
+import Subtitle from "../Subtitle";
 import { useState, useEffect } from "react";
 
 export default function MyComponent() {

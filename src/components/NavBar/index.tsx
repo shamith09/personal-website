@@ -1,6 +1,6 @@
-import styles from "./NavBar.module.css";
-import Links from "./Links";
-import SPLogo from "../../public/Logo.png";
+import styles from "./index.module.css";
+import Links from "../Links";
+import SPLogo from "public/Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 

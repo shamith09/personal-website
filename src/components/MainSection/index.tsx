@@ -1,9 +1,9 @@
 "use client";
 
-import styles from "./MainSection.module.css";
-import HeadShot from "../../public/headshot.png";
+import styles from "./index.module.css";
+import HeadShot from "public/headshot.png";
 import Image from "next/image";
-import MovingIcons from "./MovingIcons";
+import MovingIcons from "../MovingIcons";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 

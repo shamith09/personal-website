@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import Instagram from "../../public/instagram.svg";
-import Twitter from "../../public/twitter.svg";
-import LinkedIn from "../../public/linkedin.svg";
-import GitHub from "../../public/github.svg";
-import GMail from "../../public/gmail.svg";
-import styles from "./MovingIcons.module.css";
+import Instagram from "public/instagram.svg";
+import Twitter from "public/twitter.svg";
+import LinkedIn from "public/linkedin.svg";
+import GitHub from "public/github.svg";
+import GMail from "public/gmail.svg";
+import styles from "./index.module.css";
 
 interface Props {
   iconsCenter: boolean;

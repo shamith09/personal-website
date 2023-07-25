@@ -1,7 +1,7 @@
 "use client";
 
-import styles from "./Map.module.css";
-import Subtitle from "./Subtitle";
+import styles from "./index.module.css";
+import Subtitle from "../Subtitle";
 import GoogleMapReact from "google-map-react";
 
 export default function Map() {

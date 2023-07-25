@@ -1,5 +1,5 @@
-import Icons from "./Icons";
-import styles from "./BottomBar.module.css";
+import Icons from "../Icons";
+import styles from "./index.module.css";
 
 export default function BottomBar() {
   return (

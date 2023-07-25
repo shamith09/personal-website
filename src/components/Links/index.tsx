@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import styles from "./Links.module.css";
+import styles from "./index.module.css";
 import { usePathname } from "next/navigation";
 
 export default function Links() {

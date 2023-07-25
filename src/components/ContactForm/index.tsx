@@ -1,7 +1,7 @@
 "use client";
 
-import styles from "./ContactForm.module.css";
-import Subtitle from "./Subtitle";
+import styles from "./index.module.css";
+import Subtitle from "../Subtitle";
 interface EmailParams {
   email: string;
   name: string;

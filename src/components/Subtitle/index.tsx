@@ -1,4 +1,4 @@
-import styles from "./Subtitle.module.css";
+import styles from "./index.module.css";
 
 export default function Subtitle({ children }: { children: React.ReactNode }) {
   return (

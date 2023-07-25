@@ -69,7 +69,7 @@ export default function Map() {
       </div>
       <div className={styles.mapContainer}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyDK_wKFjBV8dXXGUKhrKgt9tcIpome3WrI" }}
+          bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY! }}
           defaultCenter={mapProps.center}
           defaultZoom={mapProps.zoom}
           options={{

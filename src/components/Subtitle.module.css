@@ -1,0 +1,24 @@
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 7px;
+  margin: 0;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.line {
+  height: 1px;
+  background-color: #000;
+  width: 100%;
+}

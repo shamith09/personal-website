@@ -1,15 +1,25 @@
 .containerLeft {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: auto;
-    gap: 72px;
-    padding-left: 16px;
-    width: calc(33% - 112px);
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+}
+
+.container {
+  width: calc(33% - 112px);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.subtitle {
+  width: 95%;
+  padding-bottom: 16px;
+  transform: translateX(-28px);
 }
 
 .text {
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
 }

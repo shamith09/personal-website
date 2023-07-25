@@ -4,8 +4,9 @@
 
 .final {
   flex-direction: column;
-  gap: 64px;
+  gap: 44px;
   padding-left: 32px;
+  padding-top: 14px;
   margin-top: auto;
   margin-bottom: auto;
 }

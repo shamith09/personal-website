@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 16px;
+}
+
+.subtitle {
+    width: calc(71% + 24px);
+}
+
+.mapContainer {
+    height: 45%;
+    width: calc(71% + 24px);
+}

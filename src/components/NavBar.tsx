@@ -10,7 +10,7 @@ export default function NavBar() {
       <div className={styles.container}>
         <Link href="/" className={styles.logoContainer}>
           <Image src={SPLogo} alt="Logo" className={styles.logo} />
-          <p className={`${styles.title} title`}>SHAMITH</p>
+          <p className={`${styles.title} title`}>Shamith</p>
         </Link>
         <Links />
       </div>

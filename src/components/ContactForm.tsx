@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./ContactForm.module.css";
+import Subtitle from "./Subtitle";
 interface EmailParams {
   email: string;
   name: string;
@@ -27,7 +28,9 @@ export default function ContactForm() {
   return (
     <form onSubmit={onSubmit}>
       <div className={styles.formContainer}>
-        <h1 className={`${styles.title} text`}>Got a question?</h1>
+        <div className={styles.subtitle}>
+          <Subtitle>Get in touch</Subtitle>
+        </div>
         <div className={`${styles.form} text`}>
           <input name="name" placeholder="Name" className={styles.input} />
         </div>

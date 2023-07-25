@@ -6,9 +6,8 @@
   gap: 16px;
 }
 
-.title {
-  font-size: 32px;
-  font-weight: 500;
+.subtitle {
+  width: calc(71% + 24px);
 }
 
 .form {

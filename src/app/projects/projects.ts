@@ -1,6 +1,8 @@
 import memberPortal from "public/projects/member-portal.png";
 import qubesat from "public/projects/qubesat.jpeg";
 import pintos from "public/projects/pintos.jpeg";
+import gitlet from "public/projects/gitlet.webp";
+import sixt33n from "public/projects/sixt33n.jpg";
 
 const projects = [
   {
@@ -25,11 +27,18 @@ const projects = [
     url: "https://cs162.org/static/proj/pintos-docs/",
   },
   {
-    name: "PlexTech Member Portal",
+    name: "Gitlet",
     description:
-      "A portal for members of the PlexTech community to view and manage their account.",
-    image: memberPortal,
-    url: "https://plextech-member-portal.vercel.app/",
+      "A version control system based on Git that I built from scratch using Java, with add, commit, diff, merge, and more. This project involved graph theory (DFS, BFS, etc.), hashing, and serialization.",
+    image: gitlet,
+    url: "https://inst.eecs.berkeley.edu/~cs61b/sp22/materials/proj/proj3/index.html#the-commands",
+  },
+  {
+    name: "SIXT33N",
+    description:
+      "A voice-controlled vehicle built using a TI Launchpad and PCB components. I implemented voice recognition with PCA and engineered op-amp and BJT circuits for control, along with filters and amplifiers for sound processing.",
+    image: sixt33n,
+    url: "https://inst.eecs.berkeley.edu/~ee16b/sp16/proj/",
   },
 ];
 

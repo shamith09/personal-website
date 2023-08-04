@@ -1,9 +1,17 @@
 .text {
-  color: #000;
   font-size: 16px;
   font-weight: 600;
   padding: 4px 12px 4px 12px;
   border-radius: 4px;
+}
+
+.inactive {
+  color: #000;
+}
+
+.inactive:hover {
+  background-color: #e5e5e5;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .container {

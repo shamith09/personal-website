@@ -12,7 +12,7 @@ export default function Links() {
       <Link href="/">
         <div
           className={` ${styles.text} text ${
-            pathname === "/" && styles.active
+            pathname === "/" ? styles.active : styles.inactive
           }`}
         >
           Home
@@ -21,7 +21,7 @@ export default function Links() {
       <Link href="/about">
         <div
           className={`${styles.text} text ${
-            pathname === "/about" && styles.active
+            pathname === "/about" ? styles.active : styles.inactive
           }`}
         >
           About
@@ -30,7 +30,7 @@ export default function Links() {
       <Link href="/blog">
         <div
           className={`${styles.text} text ${
-            pathname === "/blog" && styles.active
+            pathname === "/blog" ? styles.active : styles.inactive
           }`}
         >
           Blog
@@ -39,19 +39,25 @@ export default function Links() {
       <Link href="/projects">
         <div
           className={`${styles.text} text ${
-            pathname === "/projects" && styles.active
+            pathname === "/projects" ? styles.active : styles.inactive
           }`}
         >
           Projects
         </div>
       </Link>
       <Link href="/shamith-pasula-resume.pdf">
-        <div className={`${styles.text} text`}>Resume</div>
+        <div
+          className={`${styles.text} text ${
+            pathname === "/resume" ? styles.active : styles.inactive
+          }`}
+        >
+          Resume
+        </div>
       </Link>
       <Link href="/contact">
         <div
           className={`${styles.text} text ${
-            pathname === "/contact" && styles.active
+            pathname === "/contact" ? styles.active : styles.inactive
           }`}
         >
           Contact

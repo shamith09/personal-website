@@ -1,43 +1,48 @@
+import TableList from "@/components/TableList";
 import styles from "./page.module.css";
 import Subtitle from "@/components/Subtitle";
+import Link from "next/link";
 
 export default function About() {
+  const stats = {
+    Age: "19",
+    School: "University of California, Berkeley",
+    Major: "Computer Science & Astrophysics",
+    Hometown: "San Ramon, CA",
+  };
+
+  const interests = {
+    Music: "Rap, R&B, Pop",
+    Sports: "MMA, Cricket, Spikeball",
+    Clubs: "PlexTech, Space Technologies @ Cal (STAC)",
+    Hobbies: "Singing, Sketching, Working out, Reading",
+  };
+
   return (
     <div className={styles.container}>
       <Subtitle>About me</Subtitle>
-      <div className={`${styles.paragraphs} text`}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut
-          fermentum purus. Nunc consectetur lorem est, et tempus lacus mattis
-          eget. Proin nec mauris commodo, fringilla odio sit amet, venenatis
-          turpis. Cras eu euismod dui, vitae volutpat libero.
+      <div className={styles.paragraphContainer}>
+        <p className={`${styles.paragraph} text`}>
+          I&apos;m a third year at UC Berkeley studying Computer Science and
+          Astrophysics. I&apos;m passionate about building products that improve
+          our lives little by little, and I&apos;m not afraid of getting my
+          hands dirty and overengineering things.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut
-          fermentum purus. Nunc consectetur lorem est, et tempus lacus mattis
-          eget. Proin nec mauris commodo, fringilla odio sit amet, venenatis
-          turpis. Cras eu euismod dui, vitae volutpat libero.
+        <p className={`${styles.paragraph} text`}>
+          My interests lie in full-stack development, machine learning,
+          robotics, and systems engineering. I&apos;m always looking for
+          opportunities to learn new things and work with new people, so feel
+          free to visit the <Link href="/contact">Contact</Link> page and reach out!
         </p>
       </div>
-      <div className={`${styles.statsContainer} text`}>
-        <Subtitle>Stats</Subtitle>
-        <div className={styles.statsList}>
-          <div className={styles.statsItem}>
-            <p className={`${styles.statsItemTitle} title`}>Age</p>
-            <p className={`${styles.statsItemText} text`}>19</p>
-          </div>
-          <div className={styles.statsItem}>
-            <p className={`${styles.statsItemTitle} title`}>School</p>
-            <p className={`${styles.statsItemText} text`}>UC Berkeley</p>
-          </div>
-          <div className={styles.statsItem}>
-            <p className={`${styles.statsItemTitle} title`}>Major</p>
-            <p className={`${styles.statsItemText} text`}>Computer Science & Astrophysics</p>
-          </div>
-          <div className={styles.statsItem}>
-            <p className={`${styles.statsItemTitle} title`}>Hometown</p>
-            <p className={`${styles.statsItemText} text`}>San Ramon, CA</p>
-          </div>
+      <div className={`${styles.statsAndInterestsContainer} text`}>
+        <div className={styles.statsContainer}>
+          <Subtitle>Stats</Subtitle>
+          <TableList items={stats} />
+        </div>
+        <div className={styles.interestsContainer}>
+          <Subtitle>Interests</Subtitle>
+          <TableList items={interests} />
         </div>
       </div>
     </div>

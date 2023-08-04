@@ -25,10 +25,8 @@ export default function CircleChart({
   return (
     <div className={styles.circleContainer}>
       <svg className={styles.circleSvg} viewBox="0 0 100 100">
-        {/* Background circle */}
         <circle className={styles.circleBackground} cx="50" cy="50" r="45" />
 
-        {/* Partial darker circle */}
         <circle
           className={`${styles.circleOverlay} ${styles.contiguousOverlay}`}
           cx="50"

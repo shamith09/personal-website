@@ -46,30 +46,3 @@
   flex-direction: column;
   gap: 16px;
 }
-
-.skillsContainer {
-  width: 100%;
-  display: flex;
-  gap: 32px;
-}
-
-.languagesContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.librariesContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.circlesContainer {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  height: 188px;
-}

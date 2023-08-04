@@ -2,8 +2,7 @@ import TableList from "@/components/TableList";
 import styles from "./page.module.css";
 import Subtitle from "@/components/Subtitle";
 import Link from "next/link";
-import LineChart from "@/components/LineChart";
-import CircleChart from "@/components/CircleChart";
+import SkillsSection from "@/components/SkillsSection";
 
 export default function About() {
   const stats = {
@@ -53,24 +52,10 @@ export default function About() {
         </div>
       </div>
       <div className={styles.section}>
-        <div className={styles.skillsContainer}>
-          <div className={styles.languagesContainer}>
-            <Subtitle>Languages</Subtitle>
-            <div className={styles.circlesContainer}>
-              <CircleChart text="Python" percentage={100} />
-              <CircleChart text="TypeScript" percentage={90} />
-              <CircleChart text="C/C++" percentage={75} />
-              <CircleChart text="Java" percentage={70} />
-            </div>
-          </div>
-          <div className={styles.librariesContainer}>
-            <Subtitle>Libraries</Subtitle>
-            <LineChart text="React.js" percentage={100} />
-            <LineChart text="MongoDB" percentage={80} />
-            <LineChart text="Tensorflow" percentage={60} />
-            <LineChart text="AWS" percentage={50} />
-          </div>
-        </div>
+        <SkillsSection />
+      </div>
+      <div className={styles.section}>
+        <Subtitle>Experience</Subtitle>
       </div>
     </div>
   );

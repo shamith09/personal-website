@@ -10,17 +10,18 @@ import NavBar from "@/components/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shamithpasula.vercel.app"),
   title: "Shamith Pasula",
   description: "Shamith Pasula's personal website",
   twitter: {
     card: "summary_large_image",
   },
   openGraph: {
-    images: ["https://shamithpasula.vercel.app/website-preview.png"],
+    images: ["/website-preview.png"],
     title: "Shamith Pasula",
     description: "Shamith Pasula's personal website",
-    url: "https://shamithpasula.vercel.app",
-  }
+    url: "/",
+  },
 };
 
 export default function RootLayout({
@@ -33,9 +34,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className={styles.container}>
           <NavBar />
-          <MainSection>
-            {children}
-          </MainSection>
+          <MainSection>{children}</MainSection>
           <BottomBar />
         </div>
         <Analytics />

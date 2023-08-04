@@ -1,0 +1,51 @@
+/* index.module.css */
+
+.circleContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.circleSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.circleBackground {
+  fill: none;
+  stroke: #e5e5e5; /* Color of the background circle */
+  stroke-width: 2;
+}
+
+.circleOverlay {
+  fill: none;
+  stroke: none; /* Remove the fill and stroke attributes */
+  stroke-width: 2;
+  stroke: #555; /* Color of the partial darker circle */
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.contiguousOverlay {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%; /* Set the origin to the center of the circle */
+}
+
+.textContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentageText {
+  font-size: 18px;
+}
+
+.descriptionText {
+  font-size: 12px;
+}

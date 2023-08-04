@@ -12,12 +12,12 @@
 
 .bar {
     width: 100%;
-    color: #e5e5e5;
+    background-color: #e5e5e5;
     height: 2px;
 }
 
 .fill {
-    color: #555;
+    background-color: #555;
     height: 2px;
 }
 

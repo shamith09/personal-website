@@ -44,8 +44,10 @@
 
 .percentageText {
   font-size: 18px;
+  font-weight: 400;
 }
 
 .descriptionText {
   font-size: 12px;
+  font-weight: 400;
 }

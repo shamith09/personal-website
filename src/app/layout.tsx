@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["https://shamithpasula.vercel.app/website-preview.png"],
   },
+  openGraph: {
+    images: ["https://shamithpasula.vercel.app/website-preview.png"],
+    title: "Shamith Pasula",
+    description: "Shamith Pasula's personal website",
+    url: "https://shamithpasula.vercel.app",
+  }
 };
 
 export default function RootLayout({

@@ -12,6 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Shamith Pasula",
   description: "Shamith Pasula's personal website",
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://shamithpasula.vercel.app/website-preview.png"],
+  },
 };
 
 export default function RootLayout({

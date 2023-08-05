@@ -22,7 +22,7 @@
   stroke: none; /* Remove the fill and stroke attributes */
   stroke-width: 2;
   stroke: #555; /* Color of the partial darker circle */
-  transition: stroke-dasharray 0.3s ease;
+  transition: stroke-dasharray 1s ease;
 }
 
 .contiguousOverlay {

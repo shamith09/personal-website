@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import styles from "./index.module.css";
 
 export default function LineChart({
@@ -7,6 +10,12 @@ export default function LineChart({
   text: string;
   percentage: number;
 }) {
+  const [fillWidth, setFillWidth] = useState(0);
+
+  useEffect(() => {
+    setFillWidth(percentage);
+  }, [percentage]);
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -14,7 +23,10 @@ export default function LineChart({
         <div className={`${styles.text} text`}>{percentage}%</div>
       </div>
       <div className={styles.bar}>
-        <div className={styles.fill} style={{ width: `${percentage}%` }}></div>
+        <div
+          className={styles.fill}
+          style={{ width: `${fillWidth}%` }}
+        ></div>
       </div>
     </div>
   );

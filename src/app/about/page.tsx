@@ -55,7 +55,7 @@ export default function About() {
         <SkillsSection />
       </div>
       <div className={styles.section}>
-        <Subtitle>Experience</Subtitle>
+        {/* <Subtitle>Experience</Subtitle> */}
       </div>
     </div>
   );

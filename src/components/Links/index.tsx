@@ -45,7 +45,7 @@ export default function Links() {
           Projects
         </div>
       </Link>
-      <Link href="/shamith-pasula-resume.pdf">
+      <Link href="/Shamith_Pasula_resume.pdf">
         <div
           className={`${styles.text} text ${
             pathname === "/resume" ? styles.active : styles.inactive

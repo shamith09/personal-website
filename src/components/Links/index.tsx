@@ -27,7 +27,7 @@ export default function Links() {
           About
         </div>
       </Link>
-      <Link href="/blog">
+      {/* <Link href="/blog">
         <div
           className={`${styles.text} text ${
             pathname === "/blog" ? styles.active : styles.inactive
@@ -35,7 +35,7 @@ export default function Links() {
         >
           Blog
         </div>
-      </Link>
+      </Link> */}
       <Link href="/projects">
         <div
           className={`${styles.text} text ${

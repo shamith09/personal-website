@@ -6,6 +6,7 @@ import styles from "./layout.module.css";
 import BottomBar from "@/components/BottomBar";
 import MainSection from "@/components/MainSection";
 import NavBar from "@/components/NavBar";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
           <BottomBar />
         </div>
         <Analytics />
+        <GoogleAnalytics gaId="G-RKXHN45JZN" />
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ import SkillsSection from "@/components/SkillsSection";
 
 export default function About() {
   const stats = {
-    Age: "19",
+    Age: "20",
     School: "University of California, Berkeley",
     Major: "Computer Science & Astrophysics",
     Hometown: "San Ramon, CA",

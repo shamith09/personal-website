@@ -20,6 +20,8 @@ export default function Home() {
             ],
             autoStart: true,
             loop: true,
+            delay: 35,
+            deleteSpeed: 35
           }}
         />
       </div>

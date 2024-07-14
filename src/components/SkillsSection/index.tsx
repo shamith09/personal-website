@@ -11,8 +11,8 @@ export default function SkillsSection() {
         <div className={styles.circlesContainer}>
           <CircleChart text="Python" percentage={100} />
           <CircleChart text="TypeScript" percentage={90} />
+          <CircleChart text="Java" percentage={80} />
           <CircleChart text="C/C++" percentage={75} />
-          <CircleChart text="Java" percentage={70} />
         </div>
       </div>
       <div className={styles.librariesContainer}>

@@ -53,4 +53,5 @@
   width: 100%;
   word-break: break-all;
   height: 100%;
+  cursor: pointer;
 }

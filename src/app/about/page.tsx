@@ -6,17 +6,17 @@ import SkillsSection from "@/components/SkillsSection";
 
 export default function About() {
   const stats = {
-    Age: "20",
+    Age: "21",
     School: "University of California, Berkeley",
-    Major: "Computer Science & Astrophysics",
+    Major: "Computer Science",
     Hometown: "San Ramon, CA",
   };
 
   const interests = {
     Music: "Rap, R&B, Pop",
     Sports: "MMA, Cricket, Spikeball",
-    Clubs: "PlexTech, Space Technologies @ Cal (STAC)",
-    Hobbies: "Singing, Sketching, Working out, Reading",
+    Organizations: "PlexTech, CS 162 Staff",
+    Hobbies: "Working out, Making music, Selling pani puri",
   };
 
   return (

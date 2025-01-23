@@ -1,5 +1,7 @@
 # Shamith's Personal Website (Archived) [shamithpasula-archive.vercel.app](https://shamithpasula-archive.vercel.app)
 
+Go to [shamithpasula.com](https://shamithpasula.com) for my current website.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
